@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
+
 const AboutUs = () => {
   return <section id="about" className="section bg-gray-50">
       <div className="container-custom">
@@ -85,4 +87,5 @@ const AboutUs = () => {
       </div>
     </section>;
 };
+
 export default AboutUs;
