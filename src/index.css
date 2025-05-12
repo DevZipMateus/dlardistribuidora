@@ -21,10 +21,10 @@
     --primary: 354 70% 54%; /* Red */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 98%;
+    --secondary: 45 100% 51%; /* Yellow */
     --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 96%;
+    --muted: 45 30% 96%;
     --muted-foreground: 0 0% 46%;
 
     /* Accent (Yellow) */
@@ -34,11 +34,11 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 45 100% 90%;
+    --input: 45 20% 90%;
     --ring: 45 100% 51%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 26%;
@@ -98,15 +98,17 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right bottom, #fffbeb, #fff);
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-medium tracking-tight;
+    @apply font-medium tracking-tight text-gray-900;
   }
   
   /* Glass effect */
   .glass {
-    @apply bg-white/80 backdrop-blur-md border border-white/20;
+    @apply bg-white/90 backdrop-blur-md border border-yellow-100/30 shadow-sm;
   }
   
   /* Smooth scroll behavior */
@@ -116,21 +118,21 @@
   
   /* Buttons with hover effect */
   .btn-primary {
-    @apply bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-amber-400/50 shadow-sm;
+    @apply bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-yellow-400/50 shadow-md;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-black border border-amber-400/20 px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-amber-400/50 shadow-sm;
+    @apply bg-white hover:bg-gray-50 text-red-600 border border-yellow-400/30 px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-yellow-400/50 shadow-sm;
   }
   
   /* Card hover effects */
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white border border-yellow-100 rounded-xl;
   }
   
   /* Section styling */
   .section {
-    @apply py-12 md:py-20;
+    @apply py-16 md:py-24;
   }
   
   /* Container max widths */
@@ -150,11 +152,11 @@
   
   /* Plan cards */
   .plan-card {
-    @apply bg-white rounded-xl p-6 md:p-8 shadow-sm transition-all duration-300 hover:shadow-md border border-neutral-100;
+    @apply bg-white rounded-xl p-6 md:p-8 shadow-sm transition-all duration-300 hover:shadow-md border border-yellow-100;
   }
   
   .plan-card-popular {
-    @apply bg-gradient-to-br from-white to-amber-50 rounded-xl p-6 md:p-8 shadow-md transition-all duration-300 hover:shadow-lg border border-amber-200 relative;
+    @apply bg-gradient-to-br from-white to-yellow-50 rounded-xl p-6 md:p-8 shadow-md transition-all duration-300 hover:shadow-lg border border-yellow-200 relative;
   }
   
   /* Feature list */
@@ -163,7 +165,7 @@
   }
   
   .feature-icon {
-    @apply bg-amber-100 p-1.5 rounded-full mr-3 mt-0.5 flex-shrink-0 text-amber-600;
+    @apply bg-yellow-100 p-1.5 rounded-full mr-3 mt-0.5 flex-shrink-0 text-yellow-600;
   }
   
   /* Floating animation */
@@ -178,8 +180,8 @@
   
   /* Pulse animation for attention */
   @keyframes attention-pulse {
-    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(217, 169, 24, 0.7); }
-    50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(217, 169, 24, 0); }
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+    50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
   }
   
   .pulse-attention {

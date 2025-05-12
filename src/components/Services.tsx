@@ -36,17 +36,17 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="section bg-white">
+    <section id="services" className="section bg-gradient-to-br from-neutral-50 to-yellow-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-red-100 text-red-600 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-yellow-100 text-red-600 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Nossos Serviços
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
             Cestas básicas para todas as necessidades
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-700 text-lg">
             Oferecemos diferentes opções de cestas básicas para atender às necessidades específicas 
             de sua empresa e colaboradores, com produtos de qualidade e preços competitivos.
           </p>
@@ -57,10 +57,10 @@ const Services = () => {
           {services.map((service) => (
             <div 
               key={service.id} 
-              className="bg-white rounded-lg p-8 border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-300 transform hover:scale-[1.02] animate-fade-in"
+              className="bg-white rounded-xl p-8 border border-yellow-200 shadow-sm hover:shadow-md hover:border-yellow-300 transition-all duration-300 transform hover:scale-[1.02] animate-fade-in"
               style={{ animationDelay: service.delay }}
             >
-              <div className="bg-red-600/10 p-4 rounded-lg inline-block mb-5">
+              <div className="bg-red-500/10 p-4 rounded-lg inline-block mb-5">
                 <service.icon className="text-red-600" size={28} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
@@ -75,7 +75,7 @@ const Services = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Conteúdo das nossas cestas
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-700">
               Conheça em detalhes o conteúdo de cada tipo de cesta básica que oferecemos
             </p>
           </div>
@@ -86,7 +86,7 @@ const Services = () => {
         <div className="mt-16 text-center">
           <a 
             href="#contact" 
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex"
+            className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex shadow-md hover:shadow-lg"
           >
             <span>Solicite um orçamento</span>
             <ArrowRight size={18} />
