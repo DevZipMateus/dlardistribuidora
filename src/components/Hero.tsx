@@ -1,12 +1,8 @@
-
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
-
 const Hero = () => {
   const isMobile = useIsMobile();
-  
-  return (
-    <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-neutral-900 to-neutral-800 relative overflow-hidden">
+  return <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-neutral-900 to-neutral-800 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1627150424027-1a6aec27e660?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
       
       {/* Decorative elements */}
@@ -16,7 +12,7 @@ const Hero = () => {
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex justify-center mb-6 animate-fade-in">
-            <img src="/lovable-uploads/4007df16-b8e9-44a2-8159-0ad195e6c33e.png" alt="DLAR Distribuidora" className="h-24 md:h-32" />
+            
           </div>
           
           <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold text-white leading-tight mb-6 animate-fade-in`} style={{
@@ -52,8 +48,6 @@ const Hero = () => {
           </path>
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
