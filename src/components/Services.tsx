@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingBasket, Package, Building2, Truck } from 'lucide-react';
+import { ShoppingBasket, Package, Building2, Truck, ArrowRight } from 'lucide-react';
 
 const services = [
   {
