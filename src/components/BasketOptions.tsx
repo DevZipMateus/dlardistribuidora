@@ -1,16 +1,12 @@
-
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Check } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-
 const BasketOptions = () => {
   const isMobile = useIsMobile();
-  
-  return (
-    <div className="w-full max-w-4xl mx-auto">
+  return <div className="w-full max-w-4xl mx-auto">
       <Tabs defaultValue="standard" className="w-full">
         <TabsList className={`grid w-full ${isMobile ? 'grid-cols-2 gap-1 flex-wrap' : 'grid-cols-4'}`}>
           <TabsTrigger value="enterprise" className="text-xs sm:text-sm flex flex-col">
@@ -510,8 +506,6 @@ const BasketOptions = () => {
           </li>
         </ul>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default BasketOptions;
