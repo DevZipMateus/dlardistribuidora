@@ -4,25 +4,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Check } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+
 const BasketOptions = () => {
   const isMobile = useIsMobile();
+  
   return <div className="w-full max-w-4xl mx-auto">
       <Tabs defaultValue="standard" className="w-full">
         <TabsList className={`grid w-full ${isMobile ? 'grid-cols-2 gap-1 flex-wrap' : 'grid-cols-4'}`}>
-          <TabsTrigger value="enterprise" className="text-xs sm:text-sm flex flex-col">
-            <span>Cesta Empresarial</span>
+          <TabsTrigger value="enterprise" className="text-xs sm:text-sm flex flex-col py-2">
+            <span className="line-clamp-1">Cesta Empresarial</span>
             <span className="text-xs font-bold">R$149,90</span>
           </TabsTrigger>
-          <TabsTrigger value="small" className="text-xs sm:text-sm flex flex-col">
-            <span>Cesta Pequena</span>
+          <TabsTrigger value="small" className="text-xs sm:text-sm flex flex-col py-2">
+            <span className="line-clamp-1">Cesta Pequena</span>
             <span className="text-xs font-bold">R$179,90</span>
           </TabsTrigger>
-          <TabsTrigger value="standard" className="text-xs sm:text-sm flex flex-col">
-            <span>Cesta Padrão</span>
+          <TabsTrigger value="standard" className="text-xs sm:text-sm flex flex-col py-2">
+            <span className="line-clamp-1">Cesta Padrão</span>
             <span className="text-xs font-bold">R$289,90</span>
           </TabsTrigger>
-          <TabsTrigger value="large" className="text-xs sm:text-sm flex flex-col">
-            <span>Cesta Grande</span>
+          <TabsTrigger value="large" className="text-xs sm:text-sm flex flex-col py-2">
+            <span className="line-clamp-1">Cesta Grande</span>
             <span className="text-xs font-bold">R$489,90</span>
           </TabsTrigger>
         </TabsList>
@@ -31,7 +33,7 @@ const BasketOptions = () => {
         <TabsContent value="enterprise">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-bold text-center mb-4">Cesta Básica Empresarial - R$149,90</h3>
+              <h3 className="text-xl font-bold text-center mb-4 break-words">Cesta Básica Empresarial - R$149,90</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -124,7 +126,7 @@ const BasketOptions = () => {
         <TabsContent value="small">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-bold text-center mb-4">Cesta Básica Pequena - R$179,90</h3>
+              <h3 className="text-xl font-bold text-center mb-4 break-words">Cesta Básica Pequena - R$179,90</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -215,7 +217,7 @@ const BasketOptions = () => {
         <TabsContent value="standard">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-bold text-center mb-4">Cesta Básica Padrão - R$289,90</h3>
+              <h3 className="text-xl font-bold text-center mb-4 break-words">Cesta Básica Padrão - R$289,90</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -329,7 +331,7 @@ const BasketOptions = () => {
         <TabsContent value="large">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-bold text-center mb-4">Cesta Básica Grande - R$489,90</h3>
+              <h3 className="text-xl font-bold text-center mb-4 break-words">Cesta Básica Grande - R$489,90</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -508,4 +510,5 @@ const BasketOptions = () => {
       </div>
     </div>;
 };
+
 export default BasketOptions;
