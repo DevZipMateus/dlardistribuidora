@@ -37,7 +37,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">WhatsApp</h3>
               <p className="text-neutral-600 mb-4">Atendimento rápido e prático</p>
               <a 
-                href="https://wa.me/5511977163971" 
+                href="https://wa.me/5511986272764" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
@@ -56,10 +56,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">Telefone</h3>
               <p className="text-neutral-600 mb-4">Fale diretamente conosco</p>
               <a 
-                href="tel:+5511977163971"
+                href="tel:+5511986272764"
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>(11) 97716-3971</span>
+                <span>(11) 98627-2764</span>
               </a>
             </div>
           </div>

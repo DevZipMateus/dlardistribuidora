@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <a href="https://wa.me/5511977163971" target="_blank" rel="noopener noreferrer" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
+            <a href="https://wa.me/5511986272764" target="_blank" rel="noopener noreferrer" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
               <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
               <span>Solicitar Orçamento</span>
             </a>

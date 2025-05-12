@@ -39,9 +39,9 @@ const Header = () => {
               <Mail size={16} className="mr-2" />
               dlarcesta55@gmail.com
             </a>
-            <a href="tel:+5511977163971" className="flex items-center hover:text-red-600 transition-colors duration-300 whitespace-nowrap">
+            <a href="tel:+5511986272764" className="flex items-center hover:text-red-600 transition-colors duration-300 whitespace-nowrap">
               <Phone size={16} className="mr-2" />
-              (11) 97716-3971
+              (11) 98627-2764
             </a>
           </div>
           
