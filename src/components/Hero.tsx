@@ -1,34 +1,40 @@
+
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
+
 const Hero = () => {
   const isMobile = useIsMobile();
-  return <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-neutral-900 to-neutral-800 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+  
+  return (
+    <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-neutral-900 to-neutral-800 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1627150424027-1a6aec27e660?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-40 right-10 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-red-500/10 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          
+          <div className="flex justify-center mb-6 animate-fade-in">
+            <img src="/lovable-uploads/4007df16-b8e9-44a2-8159-0ad195e6c33e.png" alt="DLAR Distribuidora" className="h-24 md:h-32" />
+          </div>
           
           <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold text-white leading-tight mb-6 animate-fade-in`} style={{
           animationDelay: '0.1s'
         }}>
-            Soluções contábeis inteligentes para empresas de todos os portes
+            Cestas básicas de qualidade para sua empresa
           </h1>
           
-          <p className="text-lg text-amber-200 mb-10 animate-fade-in" style={{
+          <p className="text-lg text-yellow-200 mb-10 animate-fade-in" style={{
           animationDelay: '0.2s'
         }}>
-            Entre em contato conosco e solicite um orçamento para começar a usar hoje mesmo nossa contabilidade digital e eficiente.
+            Entre em contato conosco e solicite um orçamento para atender às necessidades da sua empresa em Itaquaquecetuba e regiões próximas.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
+            <a href="https://wa.me/5511977163971" target="_blank" rel="noopener noreferrer" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
               <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
               <span>Solicitar Orçamento</span>
             </a>
@@ -46,6 +52,8 @@ const Hero = () => {
           </path>
         </svg>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
