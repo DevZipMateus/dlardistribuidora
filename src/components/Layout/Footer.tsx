@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Phone, MapPin, Instagram } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-black text-white">
+  return <footer className="bg-black text-white">
       <div className="container-custom py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information */}
@@ -23,7 +20,9 @@ const Footer = () => {
           </div>
           
           {/* Quick Links */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <div className="animate-fade-in" style={{
+          animationDelay: '0.1s'
+        }}>
             <h3 className="text-xl font-semibold mb-6 text-white">Links Rápidos</h3>
             <ul className="space-y-3">
               <li>
@@ -42,7 +41,9 @@ const Footer = () => {
           </div>
           
           {/* Social Media */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
             <h3 className="text-xl font-semibold mb-6 text-white">Redes Sociais</h3>
             <div className="flex space-x-4 mb-6">
               <a href="https://www.instagram.com/dlarcestabasica/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-yellow-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full">
@@ -50,7 +51,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="mt-6">
-              <img src="/lovable-uploads/4007df16-b8e9-44a2-8159-0ad195e6c33e.png" alt="DLAR Distribuidora" className="h-16" />
+              <img src="/lovable-uploads/4007df16-b8e9-44a2-8159-0ad195e6c33e.png" alt="DLAR Distribuidora" className="h-32" />
             </div>
           </div>
         </div>
@@ -61,8 +62,6 @@ const Footer = () => {
           <p className="mt-2">Responsável: DLAR Distribuidora</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
