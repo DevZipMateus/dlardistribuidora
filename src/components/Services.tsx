@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ShoppingBasket, Package, Building2, Truck, ArrowRight } from 'lucide-react';
+import BasketOptions from './BasketOptions';
 
 const services = [
   {
@@ -52,7 +53,7 @@ const Services = () => {
         </div>
         
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {services.map((service) => (
             <div 
               key={service.id} 
@@ -66,6 +67,19 @@ const Services = () => {
               <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* Basket Options */}
+        <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Conteúdo das nossas cestas
+            </h2>
+            <p className="text-gray-600">
+              Conheça em detalhes o conteúdo de cada tipo de cesta básica que oferecemos
+            </p>
+          </div>
+          <BasketOptions />
         </div>
         
         {/* CTA */}
