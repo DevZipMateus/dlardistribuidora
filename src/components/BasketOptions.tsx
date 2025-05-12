@@ -9,11 +9,105 @@ const BasketOptions = () => {
   return (
     <div className="w-full max-w-4xl mx-auto">
       <Tabs defaultValue="standard" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-4">
+          <TabsTrigger value="enterprise">Cesta Empresarial <span className="ml-2 text-xs font-bold">R$149,90</span></TabsTrigger>
           <TabsTrigger value="small">Cesta Pequena <span className="ml-2 text-xs font-bold">R$179,90</span></TabsTrigger>
           <TabsTrigger value="standard">Cesta Padrão <span className="ml-2 text-xs font-bold">R$289,90</span></TabsTrigger>
           <TabsTrigger value="large">Cesta Grande <span className="ml-2 text-xs font-bold">R$489,90</span></TabsTrigger>
         </TabsList>
+        
+        {/* Enterprise Basket */}
+        <TabsContent value="enterprise">
+          <Card>
+            <CardContent className="pt-6">
+              <h3 className="text-xl font-bold text-center mb-4">Cesta Básica Empresarial - R$149,90</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-lg text-red-600">🥘 Alimentos:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>4x Arroz 1kg - Namorado / Solito</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>2x Feijão 1kg - Namorado / Solito</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Café 250g - Brasileiro / 3 Corações</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>2x Açúcar 1kg - Caravelas / Alto Alegre</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Sal 1kg - Lebre</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Farinha de Trigo 1kg - Tres Coroas / Paloma</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Fubá 500g - Maratá / Vovô</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Achocolatado 400g - Toddy / Nescau</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Óleo 900ml - Soya / Vila Velha</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Macarrão Espaguete 500g - Flor de Liz / Adria</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Macarrão Parafuso 500g - Flor de Liz / Adria</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>2x Molho de Tomate 300g - Predilecta / Quero</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Suco em pó 1kg - Maratá / Apti / Maguary</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Sardinha em lata 200g - Gomes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Flocão de Milho 500g - Maratá / Vovô</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Massa para bolo 400g - Italac / Apti</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Leite em pó 400g - Italac / Mimosa</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
+                      <span>1x Biscoito Cream Cracker 380g - Vitalli / Adria</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
         
         {/* Small Basket */}
         <TabsContent value="small">

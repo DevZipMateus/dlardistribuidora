@@ -21,7 +21,7 @@ const services = [
   {
     id: 3,
     title: 'Cestas para Empresas',
-    description: 'Soluções personalizadas para empresas que desejam oferecer cestas básicas aos seus colaboradores.',
+    description: 'Soluções personalizadas para empresas que desejam oferecer cestas básicas aos seus colaboradores, a partir de R$149,90.',
     icon: Building2,
     delay: '0.2s'
   },
