@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Phone, MapPin, Instagram } from 'lucide-react';
+
 const Footer = () => {
   return <footer className="bg-black text-white">
       <div className="container-custom py-12 md:py-16">
@@ -46,8 +48,9 @@ const Footer = () => {
         }}>
             <h3 className="text-xl font-semibold mb-6 text-white">Redes Sociais</h3>
             <div className="flex space-x-4 mb-6">
-              <a href="https://www.instagram.com/dlarcestabasica/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-yellow-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full">
+              <a href="https://www.instagram.com/dlarcestabasica/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-yellow-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full flex items-center gap-2">
                 <Instagram size={20} />
+                <span className="text-sm">@dlarcestabasica</span>
               </a>
             </div>
             <div className="mt-6">
@@ -64,4 +67,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
